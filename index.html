@@ -3,39 +3,80 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>E-commerce Case Study Dashboard</title>
-<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<title>E-commerce Case Study | Business Analyst Project</title>
 <style>
-body{font-family:Arial,sans-serif;margin:0;background:#f5f7fb;color:#172033}header{background:#111827;color:white;padding:20px 26px}.wrap{max-width:1300px;margin:auto;padding:18px}.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.card{background:white;border:1px solid #e5e7eb;border-radius:12px;padding:14px}.label{font-size:12px;color:#6b7280}.value{font-size:23px;font-weight:700;margin-top:5px}.controls{margin:14px 0;background:white;padding:14px;border-radius:12px;border:1px solid #e5e7eb}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.chart{height:380px}select{padding:9px;border-radius:8px;border:1px solid #d1d5db}@media(max-width:900px){.kpis,.grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.kpis,.grid{grid-template-columns:1fr}}
+:root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#e5e7eb;--dark:#111827;--accent:#2563eb;--soft:#eff6ff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}.hero{background:var(--dark);color:#fff;padding:54px 24px}.wrap{max-width:1120px;margin:auto}.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#93c5fd;font-weight:700}.hero h1{font-size:42px;line-height:1.12;margin:10px 0 14px}.hero p{max-width:800px;color:#d1d5db;font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.btn{display:inline-block;text-decoration:none;border-radius:9px;padding:11px 16px;font-weight:700}.primary{background:#fff;color:#111827}.secondary{background:#1f2937;color:#fff;border:1px solid #374151}.content{padding:32px 24px 52px}.section{margin:0 0 28px}.section h2{font-size:26px;margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:18px}.card h3{margin:0 0 7px;font-size:18px}.card p{margin:0;color:var(--muted)}.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px}.kpi .label{font-size:12px;color:var(--muted)}.kpi .value{font-size:22px;font-weight:800;margin-top:4px}.links{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.linkcard{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px}.linkcard:hover{border-color:#93c5fd;background:var(--soft)}.linkcard b{display:block;margin-bottom:4px}.linkcard span{color:var(--muted);font-size:14px}.preview{width:100%;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px}.note{background:#fff;border-left:4px solid var(--accent);padding:14px 16px;border-radius:8px;color:#374151}.footer{border-top:1px solid var(--line);padding:22px 24px;color:var(--muted);text-align:center;background:#fff}@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:repeat(3,1fr)}}@media(max-width:650px){.hero h1{font-size:32px}.grid,.links,.kpis{grid-template-columns:1fr}.hero{padding-top:40px}}
 </style>
 </head>
 <body>
-<header><h2 style="margin:0">E-commerce Case Study | Business Analyst Dashboard</h2><div style="color:#cbd5e1;margin-top:5px">Synthetic portfolio data • 50,000 orders</div></header>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Business Analyst Portfolio Project</div>
+    <h1>E-commerce Case Study</h1>
+    <p>An end-to-end business analysis project focused on order-to-delivery performance, business requirements, process improvement, KPI analysis, and interactive dashboards.</p>
+    <div class="actions">
+      <a class="btn primary" href="dashboard/index.html">Open Live Dashboard</a>
+      <a class="btn secondary" href="https://github.com/ayushdureja-png/ecommerce-case-study" target="_blank" rel="noopener">View Full GitHub Project</a>
+    </div>
+  </div>
+</header>
+
+<main class="content">
 <div class="wrap">
-<div class="kpis">
-<div class="card"><div class="label">Total Orders</div><div class="value">50,000</div></div>
-<div class="card"><div class="label">Delivered Revenue</div><div class="value">₹482.4M</div></div>
-<div class="card"><div class="label">Cancellation Rate</div><div class="value">5.53%</div></div>
-<div class="card"><div class="label">Return Rate</div><div class="value">9.85%</div></div>
-<div class="card"><div class="label">Late Delivery Rate</div><div class="value">46.50%</div></div>
-<div class="card"><div class="label">Avg Delivery Time</div><div class="value">3.35 days</div></div>
+  <section class="section">
+    <h2>Project overview</h2>
+    <div class="grid">
+      <div class="card"><h3>Business problem</h3><p>Identify the main causes of cancellations, late deliveries, returns, and refund leakage in the order-to-delivery journey.</p></div>
+      <div class="card"><h3>Business analysis</h3><p>Defined scope, stakeholders, BRD requirements, AS-IS/TO-BE flows, user stories, acceptance criteria, UAT, and RTM.</p></div>
+      <div class="card"><h3>Dashboard & insights</h3><p>Built KPI views covering revenue, cancellation, returns, delivery performance, regions, categories, and payment methods.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Main KPIs</h2>
+    <div class="kpis">
+      <div class="kpi"><div class="label">Total Orders</div><div class="value">50,000</div></div>
+      <div class="kpi"><div class="label">Delivered Revenue</div><div class="value">₹482.4M</div></div>
+      <div class="kpi"><div class="label">Cancellation Rate</div><div class="value">5.53%</div></div>
+      <div class="kpi"><div class="label">Return Rate</div><div class="value">9.85%</div></div>
+      <div class="kpi"><div class="label">Late Delivery Rate</div><div class="value">46.50%</div></div>
+      <div class="kpi"><div class="label">Avg Delivery Time</div><div class="value">3.35 days</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Project documents</h2>
+    <div class="links">
+      <a class="linkcard" href="https://github.com/ayushdureja-png/ecommerce-case-study/blob/main/docs/BRD.md" target="_blank" rel="noopener"><b>Business Requirements Document (BRD)</b><span>Business problem, scope, stakeholders, requirements, KPIs, and success criteria.</span></a>
+      <a class="linkcard" href="https://github.com/ayushdureja-png/ecommerce-case-study/blob/main/docs/FRD.md" target="_blank" rel="noopener"><b>Functional Requirements (FRD)</b><span>Functional and non-functional requirements supporting the future-state solution.</span></a>
+      <a class="linkcard" href="https://github.com/ayushdureja-png/ecommerce-case-study/blob/main/docs/process_maps.md" target="_blank" rel="noopener"><b>AS-IS / TO-BE Process Maps</b><span>Current and proposed order-to-delivery process flows.</span></a>
+      <a class="linkcard" href="https://github.com/ayushdureja-png/ecommerce-case-study/blob/main/docs/user_stories.md" target="_blank" rel="noopener"><b>User Stories & Acceptance Criteria</b><span>Agile requirements for key business and operational needs.</span></a>
+      <a class="linkcard" href="https://github.com/ayushdureja-png/ecommerce-case-study/blob/main/docs/UAT.md" target="_blank" rel="noopener"><b>User Acceptance Testing (UAT)</b><span>Business test scenarios used to validate requirements and KPI behaviour.</span></a>
+      <a class="linkcard" href="https://github.com/ayushdureja-png/ecommerce-case-study/blob/main/docs/RTM.md" target="_blank" rel="noopener"><b>Requirements Traceability Matrix (RTM)</b><span>Traceability from business requirements through functional requirements and testing.</span></a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Dashboard preview</h2>
+    <a href="dashboard/index.html"><img class="preview" src="dashboard/dashboard-preview.svg" alt="E-commerce Case Study dashboard preview"></a>
+  </section>
+
+  <section class="section">
+    <h2>Key findings</h2>
+    <div class="grid">
+      <div class="card"><h3>COD cancellations</h3><p>COD orders showed a higher cancellation rate than UPI, highlighting an opportunity for targeted reconfirmation.</p></div>
+      <div class="card"><h3>Fulfillment delays</h3><p>Cross-region fulfillment performed worse than same-region fulfillment, supporting improved warehouse-routing rules.</p></div>
+      <div class="card"><h3>Returns</h3><p>Fashion had the highest return rate, indicating the need for category-level return-reason monitoring and feedback.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Tools & skills</h2>
+    <div class="note">Business Requirements • BRD • FRD • Stakeholder Analysis • AS-IS/TO-BE • User Stories • Acceptance Criteria • UAT • RTM • KPI Analysis • Dashboarding • Supporting SQL / SQLite</div>
+  </section>
 </div>
-<div class="controls"><b>Interactive breakdown:</b> <select id="view"><option value="region">Region</option><option value="category">Category</option><option value="payment">Payment Method</option><option value="channel">Channel</option></select></div>
-<div class="grid"><div class="card"><div id="revenue" class="chart"></div></div><div class="card"><div id="risk" class="chart"></div></div><div class="card"><div id="monthly" class="chart"></div></div><div class="card"><div id="late" class="chart"></div></div></div>
-</div>
-<script>
-const data={
-region:[['Central',5982,60625268.28,323,5659,543],['East',7844,75834241.46,405,7439,739],['North',11986,113790302.6,628,11358,1160],['South',12184,116393292.75,738,11446,1109],['West',12004,115731974.14,670,11334,1103]],
-category:[['Beauty',8419,53631338.69,413,8006,643],['Electronics',8371,219129380.45,481,7890,789],['Fashion',8164,46925243.86,541,7623,1286],['Grocery',8387,37604372.61,387,8000,330],['Home & Kitchen',8410,63231020.18,476,7934,719],['Sports',8249,61853723.44,466,7783,887]],
-payment:[['COD',10009,96059810.43,763,9246,925],['Card',10947,106576501.84,552,10395,1008],['Net Banking',5031,49824954.71,242,4789,517],['UPI',19050,182322851.67,927,18123,1764],['Wallet',4963,47590960.58,280,4683,440]],
-channel:[['Android',23459,224140611.79,1288,22171,2187],['Web',15528,149881352.32,878,14650,1433],['iOS',11013,108353115.12,598,10415,1034]],
-monthly:[['2025-01',21467014.11],['2025-02',20786218.24],['2025-03',21914528.18],['2025-04',22431016.87],['2025-05',23754351.89],['2025-06',21033903.62],['2025-07',22257828.61],['2025-08',22358717.51],['2025-09',42961528.51],['2025-10',65329433.57],['2025-11',42682562.78],['2025-12',24689204.37],['2026-01',21115390.78],['2026-02',20130853.31],['2026-03',23248985.44],['2026-04',22213268.55],['2026-05',22489079.79],['2026-06',21511193.1]],
-late:[['Central',47.18],['East',47.31],['North',46.55],['South',46.02],['West',46.06]]
-};
-function bar(id,x,y,title){Plotly.react(id,[{type:'bar',x:x,y:y}],{title:title,margin:{t:50,l:55,r:20,b:80},xaxis:{automargin:true},yaxis:{automargin:true}},{responsive:true,displaylogo:false})}
-function line(id,x,y,title){Plotly.react(id,[{type:'scatter',mode:'lines+markers',x:x,y:y}],{title:title,margin:{t:50,l:55,r:20,b:55}},{responsive:true,displaylogo:false})}
-function update(){const v=document.getElementById('view').value,a=data[v],names=a.map(x=>x[0]);bar('revenue',names,a.map(x=>x[2]/1e6),'Delivered Revenue (₹M)');bar('risk',names,a.map(x=>100*x[3]/x[1]),'Cancellation Rate %');}
-document.getElementById('view').onchange=update;update();line('monthly',data.monthly.map(x=>x[0]),data.monthly.map(x=>x[1]/1e6),'Monthly Delivered Revenue (₹M)');bar('late',data.late.map(x=>x[0]),data.late.map(x=>x[1]),'Late Delivery Rate % by Region');
-</script>
+</main>
+<footer class="footer">E-commerce Case Study — Business Analyst Portfolio Project</footer>
 </body>
 </html>
