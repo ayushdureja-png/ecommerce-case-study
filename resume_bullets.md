@@ -1,12 +1,12 @@
-# Resume-Ready Project Entry
+# Resume Project Entry
 
-## E-commerce Case Study — Independent Business Analyst Portfolio Project
+## E-commerce Case Study — Independent Business Analyst Project
 
-- Analyzed a synthetic 50K-order e-commerce dataset using **SQL** to identify drivers of cancellations, late deliveries, returns, refunds, courier SLA performance, and cross-region fulfillment delays.
-- Created **AS-IS/TO-BE process maps, BRD, FRD, 12 user stories, acceptance criteria, UAT scenarios, and a Requirements Traceability Matrix (RTM)** for a proposed fulfillment transformation.
-- Built an **interactive dashboard** covering revenue, AOV, cancellation rate, late delivery rate, return rate, and commercial/operational performance.
-- Identified higher cancellation risk in **COD orders** and materially weaker delivery performance for **cross-region fulfillment**, leading to recommendations for COD reconfirmation, local warehouse routing, and courier SLA scorecards.
-- Defined KPI formulas and data-quality rules to ensure consistency between SQL analysis and dashboard reporting.
+- Analyzed a synthetic dataset of **50,000 e-commerce orders using SQL** to study cancellations, delivery delays, returns, refunds, courier performance, and regional fulfillment patterns.
+- Prepared **AS-IS and TO-BE process maps, BRD, FRD, user stories, acceptance criteria, UAT scenarios, and an RTM** for the proposed order-fulfillment improvements.
+- Built an **interactive dashboard** to track revenue, average order value, cancellation rate, late-delivery rate, return rate, and other operational KPIs.
+- Found that **COD orders had a higher cancellation rate** and **cross-region fulfillment had much weaker delivery performance**, which led me to recommend COD reconfirmation, same-region warehouse routing, and courier SLA monitoring.
+- Defined KPI formulas and basic data-quality checks so the SQL analysis and dashboard results could be validated against each other.
 
-## Skills demonstrated
-Business Analysis | Requirements Elicitation | BRD | FRD | User Stories | Acceptance Criteria | AS-IS/TO-BE | Process Mapping | SQL | SQLite | Dashboarding | KPI Design | UAT | RTM | Root-Cause Analysis | Stakeholder Analysis
+## Skills used
+Business Analysis | SQL | SQLite | Requirements Analysis | BRD | FRD | User Stories | Acceptance Criteria | AS-IS/TO-BE | Process Mapping | Dashboarding | KPI Analysis | UAT | RTM | Root-Cause Analysis
