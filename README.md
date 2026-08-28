@@ -101,7 +101,3 @@ resume_bullets.md           Resume-ready project bullets
 ## What I learned
 
 This project helped me understand how a Business Analyst can combine **business requirements and dashboards** to turn operational data into useful decisions. The most important part was not writing complex SQL, but identifying the business problem, defining the right KPIs, building useful dashboard views, and translating the findings into realistic process improvements.
-
-## Important note
-
-This is a **portfolio case study using synthetic data**. NovaCart is fictional, and this project should be presented as an independent project rather than professional work experience.
