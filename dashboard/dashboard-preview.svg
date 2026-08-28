@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="1200" height="760" fill="#f5f7fb"/>
+<rect x="0" y="0" width="1200" height="72" fill="#111827"/>
+<text x="28" y="32" font-family="Arial" font-size="23" font-weight="700" fill="#ffffff">E-commerce Case Study | Business Analyst Dashboard</text>
+<text x="28" y="53" font-family="Arial" font-size="13" fill="#cbd5e1">Synthetic portfolio data • 50,000 orders</text>
+
+<g font-family="Arial">
+<g transform="translate(25,94)">
+<rect width="175" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/><text x="15" y="27" font-size="12" fill="#6b7280">Total Orders</text><text x="15" y="59" font-size="27" font-weight="700" fill="#172033">50,000</text></g>
+<g transform="translate(215,94)"><rect width="175" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/><text x="15" y="27" font-size="12" fill="#6b7280">Delivered Revenue</text><text x="15" y="59" font-size="27" font-weight="700" fill="#172033">₹482.4M</text></g>
+<g transform="translate(405,94)"><rect width="175" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/><text x="15" y="27" font-size="12" fill="#6b7280">Cancellation Rate</text><text x="15" y="59" font-size="27" font-weight="700" fill="#172033">5.53%</text></g>
+<g transform="translate(595,94)"><rect width="175" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/><text x="15" y="27" font-size="12" fill="#6b7280">Return Rate</text><text x="15" y="59" font-size="27" font-weight="700" fill="#172033">9.85%</text></g>
+<g transform="translate(785,94)"><rect width="175" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/><text x="15" y="27" font-size="12" fill="#6b7280">Late Delivery Rate</text><text x="15" y="59" font-size="27" font-weight="700" fill="#172033">46.50%</text></g>
+<g transform="translate(975,94)"><rect width="200" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/><text x="15" y="27" font-size="12" fill="#6b7280">Avg Delivery Time</text><text x="15" y="59" font-size="27" font-weight="700" fill="#172033">3.35 days</text></g>
+
+<g transform="translate(25,205)"><rect width="565" height="245" rx="12" fill="#ffffff" stroke="#e5e7eb"/><text x="18" y="29" font-size="16" font-weight="700" fill="#172033">Monthly Delivered Revenue (₹M)</text>
+<line x1="55" y1="205" x2="530" y2="205" stroke="#d1d5db"/><line x1="55" y1="55" x2="55" y2="205" stroke="#d1d5db"/>
+<polyline points="55,166 83,168 111,164 139,161 167,158 195,166 223,162 251,161 279,112 307,57 335,113 363,155 391,166 419,170 447,159 475,162 503,160 530,164" fill="none" stroke="#2563eb" stroke-width="4"/>
+<g fill="#2563eb"><circle cx="55" cy="166" r="4"/><circle cx="83" cy="168" r="4"/><circle cx="111" cy="164" r="4"/><circle cx="139" cy="161" r="4"/><circle cx="167" cy="158" r="4"/><circle cx="195" cy="166" r="4"/><circle cx="223" cy="162" r="4"/><circle cx="251" cy="161" r="4"/><circle cx="279" cy="112" r="4"/><circle cx="307" cy="57" r="4"/><circle cx="335" cy="113" r="4"/><circle cx="363" cy="155" r="4"/><circle cx="391" cy="166" r="4"/><circle cx="419" cy="170" r="4"/><circle cx="447" cy="159" r="4"/><circle cx="475" cy="162" r="4"/><circle cx="503" cy="160" r="4"/><circle cx="530" cy="164" r="4"/></g>
+<text x="55" y="226" font-size="11" fill="#6b7280">Jan-25</text><text x="285" y="226" font-size="11" fill="#6b7280">Oct-25</text><text x="485" y="226" font-size="11" fill="#6b7280">Jun-26</text></g>
+
+<g transform="translate(610,205)"><rect width="565" height="245" rx="12" fill="#ffffff" stroke="#e5e7eb"/><text x="18" y="29" font-size="16" font-weight="700" fill="#172033">Delivered Revenue by Region (₹M)</text>
+<line x1="55" y1="205" x2="530" y2="205" stroke="#d1d5db"/>
+<rect x="78" y="128" width="55" height="77" fill="#2563eb"/><rect x="164" y="109" width="55" height="96" fill="#2563eb"/><rect x="250" y="61" width="55" height="144" fill="#2563eb"/><rect x="336" y="57" width="55" height="148" fill="#2563eb"/><rect x="422" y="58" width="55" height="147" fill="#2563eb"/>
+<text x="82" y="225" font-size="10" fill="#6b7280">Central</text><text x="175" y="225" font-size="10" fill="#6b7280">East</text><text x="260" y="225" font-size="10" fill="#6b7280">North</text><text x="345" y="225" font-size="10" fill="#6b7280">South</text><text x="432" y="225" font-size="10" fill="#6b7280">West</text></g>
+
+<g transform="translate(25,472)"><rect width="565" height="245" rx="12" fill="#ffffff" stroke="#e5e7eb"/><text x="18" y="29" font-size="16" font-weight="700" fill="#172033">Cancellation Rate by Payment Method</text>
+<line x1="55" y1="205" x2="530" y2="205" stroke="#d1d5db"/>
+<rect x="75" y="64" width="60" height="141" fill="#f59e0b"/><rect x="163" y="112" width="60" height="93" fill="#f59e0b"/><rect x="251" y="117" width="60" height="88" fill="#f59e0b"/><rect x="339" y="116" width="60" height="89" fill="#f59e0b"/><rect x="427" y="101" width="60" height="104" fill="#f59e0b"/>
+<text x="91" y="225" font-size="10" fill="#6b7280">COD</text><text x="180" y="225" font-size="10" fill="#6b7280">Card</text><text x="246" y="225" font-size="10" fill="#6b7280">Net Banking</text><text x="356" y="225" font-size="10" fill="#6b7280">UPI</text><text x="440" y="225" font-size="10" fill="#6b7280">Wallet</text>
+<text x="89" y="55" font-size="11" font-weight="700" fill="#172033">7.6%</text></g>
+
+<g transform="translate(610,472)"><rect width="565" height="245" rx="12" fill="#ffffff" stroke="#e5e7eb"/><text x="18" y="29" font-size="16" font-weight="700" fill="#172033">Return Rate by Category</text>
+<line x1="55" y1="205" x2="530" y2="205" stroke="#d1d5db"/>
+<rect x="68" y="134" width="52" height="71" fill="#10b981"/><rect x="143" y="116" width="52" height="89" fill="#10b981"/><rect x="218" y="56" width="52" height="149" fill="#10b981"/><rect x="293" y="169" width="52" height="36" fill="#10b981"/><rect x="368" y="125" width="52" height="80" fill="#10b981"/><rect x="443" y="104" width="52" height="101" fill="#10b981"/>
+<text x="69" y="225" font-size="9" fill="#6b7280">Beauty</text><text x="135" y="225" font-size="9" fill="#6b7280">Electronics</text><text x="222" y="225" font-size="9" fill="#6b7280">Fashion</text><text x="294" y="225" font-size="9" fill="#6b7280">Grocery</text><text x="360" y="225" font-size="9" fill="#6b7280">Home</text><text x="447" y="225" font-size="9" fill="#6b7280">Sports</text>
+<text x="224" y="47" font-size="11" font-weight="700" fill="#172033">16.9%</text></g>
+</g>
+</svg>
