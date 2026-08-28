@@ -2,11 +2,10 @@
 
 ## E-commerce Case Study — Independent Business Analyst Project
 
-- Analyzed a synthetic dataset of **50,000 e-commerce orders using SQL** to study cancellations, delivery delays, returns, refunds, courier performance, and regional fulfillment patterns.
-- Prepared **AS-IS and TO-BE process maps, BRD, FRD, user stories, acceptance criteria, UAT scenarios, and an RTM** for the proposed order-fulfillment improvements.
-- Built an **interactive dashboard** to track revenue, average order value, cancellation rate, late-delivery rate, return rate, and other operational KPIs.
-- Found that **COD orders had a higher cancellation rate** and **cross-region fulfillment had much weaker delivery performance**, which led me to recommend COD reconfirmation, same-region warehouse routing, and courier SLA monitoring.
-- Defined KPI formulas and basic data-quality checks so the SQL analysis and dashboard results could be validated against each other.
+- Prepared a detailed **Business Requirements Document (BRD)**, project scope, stakeholder requirements, AS-IS/TO-BE process flows, user stories, acceptance criteria, UAT scenarios, and RTM for an e-commerce order-to-delivery improvement case study.
+- Built an **interactive business dashboard** to track revenue, cancellations, returns, late deliveries, average delivery time, regional performance, payment-method risk, and category-level trends across a synthetic 50,000-order dataset.
+- Used dashboard insights to identify **higher COD cancellation rates, weaker cross-region delivery performance, and elevated Fashion returns**, then proposed warehouse-routing, COD reconfirmation, courier SLA, and return-analysis improvements.
+- Used a small set of **supporting SQL queries** to prepare and validate the dashboard KPIs rather than making SQL the main focus of the project.
 
 ## Skills used
-Business Analysis | SQL | SQLite | Requirements Analysis | BRD | FRD | User Stories | Acceptance Criteria | AS-IS/TO-BE | Process Mapping | Dashboarding | KPI Analysis | UAT | RTM | Root-Cause Analysis
+Business Analysis | BRD | Requirements Analysis | Stakeholder Analysis | AS-IS/TO-BE | Process Mapping | Dashboarding | KPI Design | Business Insights | User Stories | Acceptance Criteria | UAT | RTM | SQL | SQLite
