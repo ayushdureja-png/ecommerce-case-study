@@ -4,6 +4,12 @@ This is an **independent Business Analyst portfolio project** I created to pract
 
 I used a fictional company called **NovaCart** and a synthetic dataset of **50,000 orders** covering January 2025 to June 2026. My goal was to understand why cancellations, late deliveries, and returns were happening and then turn those findings into practical business and system requirements.
 
+## Dashboard Preview
+
+![E-commerce Case Study Dashboard](dashboard/dashboard-preview.svg)
+
+The interactive dashboard is available in [`dashboard/index.html`](dashboard/index.html). It includes revenue, cancellation, return, delivery, region, category, payment-method and monthly performance views.
+
 ## What I worked on
 
 For this case study, I covered the full BA workflow instead of only building a dashboard.
@@ -71,6 +77,7 @@ Based on the analysis, I proposed the following improvements:
 sql/schema.sql              Database schema
 sql/analysis_queries.sql    25 SQL business-analysis queries
 dashboard/index.html        Interactive dashboard
+dashboard/dashboard-preview.svg Dashboard preview shown above
 docs/BRD.md                 Business Requirements Document
 docs/FRD.md                 Functional Requirements Document
 docs/user_stories.md        User stories and acceptance criteria
