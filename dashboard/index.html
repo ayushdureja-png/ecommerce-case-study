@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E-commerce Case Study Dashboard</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f5f7fb;color:#172033}header{background:#111827;color:white;padding:20px 26px}.wrap{max-width:1300px;margin:auto;padding:18px}.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.card{background:white;border:1px solid #e5e7eb;border-radius:12px;padding:14px}.label{font-size:12px;color:#6b7280}.value{font-size:23px;font-weight:700;margin-top:5px}.controls{margin:14px 0;background:white;padding:14px;border-radius:12px;border:1px solid #e5e7eb}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.chart{height:380px}select{padding:9px;border-radius:8px;border:1px solid #d1d5db}@media(max-width:900px){.kpis,.grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.kpis,.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><h2 style="margin:0">E-commerce Case Study | Business Analyst Dashboard</h2><div style="color:#cbd5e1;margin-top:5px">Synthetic portfolio data • 50,000 orders</div></header>
+<div class="wrap">
+<div class="kpis">
+<div class="card"><div class="label">Total Orders</div><div class="value">50,000</div></div>
+<div class="card"><div class="label">Delivered Revenue</div><div class="value">₹482.4M</div></div>
+<div class="card"><div class="label">Cancellation Rate</div><div class="value">5.53%</div></div>
+<div class="card"><div class="label">Return Rate</div><div class="value">9.85%</div></div>
+<div class="card"><div class="label">Late Delivery Rate</div><div class="value">46.50%</div></div>
+<div class="card"><div class="label">Avg Delivery Time</div><div class="value">3.35 days</div></div>
+</div>
+<div class="controls"><b>Interactive breakdown:</b> <select id="view"><option value="region">Region</option><option value="category">Category</option><option value="payment">Payment Method</option><option value="channel">Channel</option></select></div>
+<div class="grid"><div class="card"><div id="revenue" class="chart"></div></div><div class="card"><div id="risk" class="chart"></div></div><div class="card"><div id="monthly" class="chart"></div></div><div class="card"><div id="late" class="chart"></div></div></div>
+</div>
+<script>
+const data={
+region:[['Central',5982,60625268.28,323,5659,543],['East',7844,75834241.46,405,7439,739],['North',11986,113790302.6,628,11358,1160],['South',12184,116393292.75,738,11446,1109],['West',12004,115731974.14,670,11334,1103]],
+category:[['Beauty',8419,53631338.69,413,8006,643],['Electronics',8371,219129380.45,481,7890,789],['Fashion',8164,46925243.86,541,7623,1286],['Grocery',8387,37604372.61,387,8000,330],['Home & Kitchen',8410,63231020.18,476,7934,719],['Sports',8249,61853723.44,466,7783,887]],
+payment:[['COD',10009,96059810.43,763,9246,925],['Card',10947,106576501.84,552,10395,1008],['Net Banking',5031,49824954.71,242,4789,517],['UPI',19050,182322851.67,927,18123,1764],['Wallet',4963,47590960.58,280,4683,440]],
+channel:[['Android',23459,224140611.79,1288,22171,2187],['Web',15528,149881352.32,878,14650,1433],['iOS',11013,108353115.12,598,10415,1034]],
+monthly:[['2025-01',21467014.11],['2025-02',20786218.24],['2025-03',21914528.18],['2025-04',22431016.87],['2025-05',23754351.89],['2025-06',21033903.62],['2025-07',22257828.61],['2025-08',22358717.51],['2025-09',42961528.51],['2025-10',65329433.57],['2025-11',42682562.78],['2025-12',24689204.37],['2026-01',21115390.78],['2026-02',20130853.31],['2026-03',23248985.44],['2026-04',22213268.55],['2026-05',22489079.79],['2026-06',21511193.1]],
+late:[['Central',47.18],['East',47.31],['North',46.55],['South',46.02],['West',46.06]]
+};
+function bar(id,x,y,title){Plotly.react(id,[{type:'bar',x:x,y:y}],{title:title,margin:{t:50,l:55,r:20,b:80},xaxis:{automargin:true},yaxis:{automargin:true}},{responsive:true,displaylogo:false})}
+function line(id,x,y,title){Plotly.react(id,[{type:'scatter',mode:'lines+markers',x:x,y:y}],{title:title,margin:{t:50,l:55,r:20,b:55}},{responsive:true,displaylogo:false})}
+function update(){const v=document.getElementById('view').value,a=data[v],names=a.map(x=>x[0]);bar('revenue',names,a.map(x=>x[2]/1e6),'Delivered Revenue (₹M)');bar('risk',names,a.map(x=>100*x[3]/x[1]),'Cancellation Rate %');}
+document.getElementById('view').onchange=update;update();line('monthly',data.monthly.map(x=>x[0]),data.monthly.map(x=>x[1]/1e6),'Monthly Delivered Revenue (₹M)');bar('late',data.late.map(x=>x[0]),data.late.map(x=>x[1]),'Late Delivery Rate % by Region');
+</script>
+</body>
+</html>
